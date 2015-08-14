@@ -22,5 +22,5 @@ Created by Ashley Sullins.
 
 ## License
 
-MIT License 2015
+[MIT License 2015] (https://github.com/ashleysullins/word-puzzle-java/blob/master/LICENSE.md)
 
