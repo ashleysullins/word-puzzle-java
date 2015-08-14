@@ -18,6 +18,14 @@ public class AppIntegrationTest extends FluentTest {
   @Test
   public void rootTest() {
       goTo("http://localhost:4567/");
-      assertThat(pageSource()).contains("Add your website text here");
+      assertThat(pageSource()).contains("Type your favorite word or saying below!");
+  }
+
+  @Test
+  public void puzzleficationTest() {
+      goTo("http://localhost:4567/");
+      fill("#myWord").with("Believe you can and you're halfway there. Theodore Roosevelt");
+      submit(".btn");
+      assertThat(pageSource()).contains("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt");
   }
 }

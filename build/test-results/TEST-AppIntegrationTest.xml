@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppIntegrationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2015-08-14T17:25:02" hostname="Ashleys-MacBook-Pro.local" time="0.447">
+<testsuite name="AppIntegrationTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2015-08-14T17:45:23" hostname="Ashleys-MacBook-Pro.local" time="0.621">
   <properties/>
-  <testcase name="rootTest" classname="AppIntegrationTest" time="0.447">
-    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;title&gt;&#13;&#10;      {Page Title}&#13;&#10;    &lt;/title&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;&#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;div class=&quot;container&quot;&gt;&#13;&#10;      &lt;h1&gt;&#13;&#10;        Header Goes Here&#13;&#10;      &lt;/h1&gt;&#13;&#10;      &lt;form action=&quot;/results&quot; method=&quot;get&quot;&gt;&#13;&#10;        &lt;div class=&quot;form-group&quot;&gt;&#13;&#10;          &lt;input id=&quot;form_id&quot; name=&quot;form_name&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;&#13;&#10;        &lt;/div&gt;&#13;&#10;        &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;&#13;&#10;          Submit!&#13;&#10;        &lt;/button&gt;&#13;&#10;      &lt;/form&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#10;to contain:&#10; &lt;&quot;Add your website text here&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
+  <testcase name="puzzleficationTest" classname="AppIntegrationTest" time="0.583">
+    <failure message="java.lang.AssertionError: &#10;Expecting:&#10; &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;html&gt;&#13;&#10;  &lt;head&gt;&#13;&#10;    &lt;title&gt;&#13;&#10;      Word Puzzle&#13;&#10;    &lt;/title&gt;&#13;&#10;    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;&#13;&#10;  &lt;/head&gt;&#13;&#10;  &lt;body&gt;&#13;&#10;    &lt;div class=&quot;container&quot;&gt;&#13;&#10;      &lt;h1&gt;&#13;&#10;        Your Word Has Been Transformed into....&#13;&#10;      &lt;/h1&gt;&#13;&#10;      &lt;h2&gt;&#13;&#10;        $puzzlefiedWord&#13;&#10;      &lt;/h2&gt;&#13;&#10;    &lt;/div&gt;&#13;&#10;  &lt;/body&gt;&#13;&#10;&lt;/html&gt;&#13;&#10;&quot;&gt;&#10;to contain:&#10; &lt;&quot;B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt&quot;&gt; " type="java.lang.AssertionError">java.lang.AssertionError: 
 Expecting:
  &lt;&quot;&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;html&gt;
   &lt;head&gt;
     &lt;title&gt;
-      {Page Title}
+      Word Puzzle
     &lt;/title&gt;
     &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;/&gt;
   &lt;/head&gt;
   &lt;body&gt;
     &lt;div class=&quot;container&quot;&gt;
       &lt;h1&gt;
-        Header Goes Here
+        Your Word Has Been Transformed into....
       &lt;/h1&gt;
-      &lt;form action=&quot;/results&quot; method=&quot;get&quot;&gt;
-        &lt;div class=&quot;form-group&quot;&gt;
-          &lt;input id=&quot;form_id&quot; name=&quot;form_name&quot; class=&quot;form-control&quot; type=&quot;text&quot;/&gt;
-        &lt;/div&gt;
-        &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;
-          Submit!
-        &lt;/button&gt;
-      &lt;/form&gt;
+      &lt;h2&gt;
+        $puzzlefiedWord
+      &lt;/h2&gt;
     &lt;/div&gt;
   &lt;/body&gt;
 &lt;/html&gt;
 &quot;&gt;
 to contain:
- &lt;&quot;Add your website text here&quot;&gt; 
-	at AppIntegrationTest.rootTest(AppIntegrationTest.java:21)
+ &lt;&quot;B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt&quot;&gt; 
+	at AppIntegrationTest.puzzleficationTest(AppIntegrationTest.java:29)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,14 +78,15 @@ to contain:
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
+  <testcase name="rootTest" classname="AppIntegrationTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@22023231{HTTP/1.1}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@5e3843b7{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@6674a00e by 
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@22023231{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@3e337adf by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@5e3843b7{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - done
 ]]></system-err>
 </testsuite>
