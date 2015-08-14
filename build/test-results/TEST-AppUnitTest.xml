@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppUnitTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-08-14T17:45:24" hostname="Ashleys-MacBook-Pro.local" time="0.007">
+<testsuite name="AppUnitTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-08-14T17:58:19" hostname="Ashleys-MacBook-Pro.local" time="0.008">
   <properties/>
   <testcase name="replaceVowels_replaceUWithDash_dash" classname="AppUnitTest" time="0.0"/>
-  <testcase name="replaceVowels_replaceAWithDash_dash" classname="AppUnitTest" time="0.0"/>
-  <testcase name="replaceVowels_replaceIWithDash_dash" classname="AppUnitTest" time="0.0"/>
-  <testcase name="replaceVowels_replaceOWithDash_dash" classname="AppUnitTest" time="0.0"/>
-  <testcase name="replaceVowels_replaceEWithDash_dash" classname="AppUnitTest" time="0.001"/>
-  <testcase name="replaceVowels_doNotReplaceConsonantsAndPunctuation_word" classname="AppUnitTest" time="0.0"/>
+  <testcase name="replaceVowels_replaceAWithDash_dash" classname="AppUnitTest" time="0.001"/>
+  <testcase name="replaceVowels_replaceIWithDash_dash" classname="AppUnitTest" time="0.001"/>
+  <testcase name="replaceVowels_replaceOWithDash_dash" classname="AppUnitTest" time="0.001"/>
+  <testcase name="replaceVowels_replaceEWithDash_dash" classname="AppUnitTest" time="0.0"/>
+  <testcase name="replaceVowels_doNotReplaceConsonantsAndPunctuation_word" classname="AppUnitTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

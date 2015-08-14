@@ -20,8 +20,11 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/results.vtl");
 
-      //Variables that you'd like to call on each page go here
+      String word = request.queryParams("word");
+      String puzzlefiedWord = replaceVowels(word);
 
+      model.put("word", word);
+      model.put("puzzlefiedWord", puzzlefiedWord);
       return new ModelAndView(model, layout);
 
 
@@ -29,7 +32,7 @@ public class App {
   }
 
   public static String replaceVowels(String word){
-    String wordMinusVowels = word.toLowerCase().replaceAll("[aeiou]", "-");
+    String wordMinusVowels = word.replaceAll("[aeiouAEIOU]", "-");
       return wordMinusVowels;
       }
 }
