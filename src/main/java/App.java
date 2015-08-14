@@ -20,9 +20,13 @@ public class App {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/results.vtl");
 
+      //Variables that you'd like to call on each page go here
+
       return new ModelAndView(model, layout);
 
 
     }, new VelocityTemplateEngine());
   }
+
+  //Algorithm goes here
 }

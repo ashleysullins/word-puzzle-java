@@ -5,8 +5,6 @@ public class AppTest {
 
   @Test
   public void methodName_testDescription_expectedOutcome() {
-    App testApp = new App();
-    // eventually put your testing code here
-    assertEquals(true, testApp.methodName("hello"));
+    assertEquals(true, App.methodName("Example Use Case"));
   }
 }
