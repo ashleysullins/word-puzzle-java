@@ -28,5 +28,8 @@ public class App {
     }, new VelocityTemplateEngine());
   }
 
-  //Algorithm goes here
+  public static String replaceVowels(String word){
+    String wordMinusVowels = word.toLowerCase().replaceAll("[aeiou]", "-");
+      return wordMinusVowels;
+      }
 }
