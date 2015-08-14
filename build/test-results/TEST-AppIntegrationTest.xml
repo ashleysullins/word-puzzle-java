@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AppIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T17:58:19" hostname="Ashleys-MacBook-Pro.local" time="0.583">
+<testsuite name="AppIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T19:02:18" hostname="Ashleys-MacBook-Pro.local" time="0.604">
   <properties/>
-  <testcase name="puzzleficationTest" classname="AppIntegrationTest" time="0.557"/>
-  <testcase name="rootTest" classname="AppIntegrationTest" time="0.017"/>
+  <testcase name="puzzleficationTest" classname="AppIntegrationTest" time="0.578"/>
+  <testcase name="rootTest" classname="AppIntegrationTest" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[[Thread-4] INFO spark.webserver.SparkServer - == Spark has ignited ...
 [Thread-4] INFO spark.webserver.SparkServer - >> Listening on 0.0.0.0:4567
 [Thread-4] INFO org.eclipse.jetty.server.Server - jetty-9.0.2.v20130417
-[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@422673bb{HTTP/1.1}{0.0.0.0:4567}
+[Thread-4] INFO org.eclipse.jetty.server.ServerConnector - Started ServerConnector@333403ed{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - >>> Spark shutting down ...
-[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@2e31549a by 
-[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@422673bb{HTTP/1.1}{0.0.0.0:4567}
+[Test worker] INFO org.eclipse.jetty.server.Server - Graceful shutdown org.eclipse.jetty.server.Server@5858a275 by 
+[Test worker] INFO org.eclipse.jetty.server.ServerConnector - Stopped ServerConnector@333403ed{HTTP/1.1}{0.0.0.0:4567}
 [Test worker] INFO spark.webserver.SparkServer - done
 ]]></system-err>
 </testsuite>

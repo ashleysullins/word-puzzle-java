@@ -22,12 +22,16 @@ public class App {
 
       String word = request.queryParams("word");
       String puzzlefiedWord = replaceVowels(word);
+      Boolean isBlank = false;
+
+      if (word.length() == 0) {
+        isBlank = true;
+      }
 
       model.put("word", word);
       model.put("puzzlefiedWord", puzzlefiedWord);
+      model.put("isBlank", isBlank);
       return new ModelAndView(model, layout);
-
-
     }, new VelocityTemplateEngine());
   }
 

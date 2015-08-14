@@ -1,2 +1,13 @@
 <h1>Your Word Has Been Transformed into....</h1>
-<h2>$puzzlefiedWord</h2>
+#if($isBlank)
+<h3>Nothing, because you didn't write one!<h3>
+#else
+<h3>$puzzlefiedWord</h3>
+#end
+
+<button onclick="goBack()" class="btn btn-info">Try Again!</button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

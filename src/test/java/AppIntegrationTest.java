@@ -28,4 +28,5 @@ public class AppIntegrationTest extends FluentTest {
       submit(".btn");
       assertThat(pageSource()).contains("B-l--v- y-- c-n -nd y--'r- h-lfw-y th-r-. Th--d-r- R--s-v-lt");
   }
+  
 }
