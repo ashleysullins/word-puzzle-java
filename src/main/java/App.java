@@ -36,7 +36,6 @@ public class App {
   }
 
   public static String replaceVowels(String word){
-    String wordMinusVowels = word.replaceAll("[aeiouAEIOU]", "-");
-      return wordMinusVowels;
+    return word.replaceAll("[aeiouAEIOU]", "-");
       }
 }
