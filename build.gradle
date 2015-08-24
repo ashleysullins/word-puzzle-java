@@ -2,12 +2,25 @@ apply plugin: 'java'
 apply plugin: 'application'
 
 // placeholderbelow
-archivesBaseName = "Template"
+archivesBaseName = "word-puzzle-java"
+applicationName = "word-puzzle-java"
 version = '1.0'
 mainClassName = "App"
 
 repositories {
  mavenCentral()
+}
+
+buildscript {
+    repositories {
+      mavenCentral()
+        maven {
+          url "http://dl.bintray.com/vermeulen-mp/gradle-plugins"
+        }
+    }
+    dependencies {
+        classpath 'com.wiredforcode:gradle-heroku-plugin:1.0.0'
+    }
 }
 
 dependencies {
@@ -17,3 +30,13 @@ dependencies {
   testCompile group: 'org.fluentlenium', name: 'fluentlenium-core', version: '0.10.3'
   testCompile group: 'org.fluentlenium', name: 'fluentlenium-assertj', version: '0.10.3'
 }
+
+apply plugin: 'heroku'
+
+heroku {
+    //get this from heroku
+    apiKey = '48b4d248-b4ed-4e1c-a2a8-6ceeed2745cb'
+}
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])

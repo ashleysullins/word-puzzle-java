@@ -1,0 +1,1 @@
+web: ./build/install/word-puzzle-java/bin/word-puzzle-java
